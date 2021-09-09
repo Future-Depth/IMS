@@ -1,0 +1,210 @@
+
+.faq {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.faq .section-title {
+  text-align: center;
+
+}
+.faq .section-title p{
+  color: #000000;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Oleo Script', cursive;
+}
+.faq ul li
+{
+  list-style-type: none;
+
+}
+
+.faq .faq-list {
+  padding: 0 100px;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li + li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background-image: url(../img/bg.png); /*Have to be changed*/
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: 'Oleo Script', cursive;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 5px 5px 30px;
+  outline: none;
+  text-decoration: none;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #a8dabc;
+}
+
+.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 0 30px;
+  font-size: 19px;
+  color: #006a71;
+  font-weight:bold;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+.faq .faq-list a
+{
+  color: #132743; /*Have to be changed*/
+}
+.faq .faq-list a.collapse
+{
+  color: #132743; /*Have to be changed*/
+}
+
+.faq .faq-list a.collapsed {
+  color: #394989; /*Have to be changed*/
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #e8505b; /*Have to be changed*/
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+  color: black;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+  
+  @media(min-width: 320px) and (max-width: 374px)
+  {
+    .faq .faq-list a {
+      display: block;
+      position: relative;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 0 15px;
+      outline: none;
+    }
+    .faq .faq-list p {
+      margin-bottom: 0;
+      padding: 0 15px;
+      font-size: 10px;
+    }
+    .faq .faq-list li {
+      padding: 5px;
+    }
+    .faq .section-title p{
+      color: #000000;
+      font-size: 30px;
+      font-weight: 400;
+      font-family: 'Oleo Script', cursive;
+    }
+  }
+  @media(min-width: 375px) and (max-width: 424px)
+  {
+    .faq .faq-list a {
+      display: block;
+      position: relative;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 15px;
+      outline: none;
+    }
+    .faq .faq-list p {
+      margin-bottom: 0;
+      padding: 0 15px;
+      font-size: 12px;
+    }
+    .faq .faq-list li {
+      padding: 5px;
+    }
+    .faq .section-title p{
+      color: #000000;
+      font-size: 30px;
+    }
+  }
+  @media(min-width: 425px) and (max-width: 767px)
+  {
+    .faq .faq-list a {
+      display: block;
+      position: relative;
+      font-size: 21px;
+      font-weight: bold;
+      padding: 0 15px;
+      outline: none;
+    }
+    .faq .faq-list p {
+      margin-bottom: 0;
+      padding: 0 15px;
+      font-size: 16px;
+    }
+    .faq .faq-list li {
+      padding: 5px;
+    }
+    .faq .section-title p{
+      color: #000000;
+      font-size: 30px;
+    }
+  }
+
+  @media(min-width: 767px) and (max-width: 1000px)
+  {
+    .faq .faq-list a {
+      display: block;
+      position: relative;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 0 15px;
+      outline: none;
+    }
+    .faq .faq-list p {
+      margin-bottom: 0;
+      padding: 0 15px;
+      font-size: 22px;
+    }
+    .faq .faq-list li {
+      padding: 5px;
+    }
+    .faq .section-title p{
+      color: #000000;
+      font-size: 31px;
+    }
+  }
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 10px;
+  }
+}
