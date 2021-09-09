@@ -1,0 +1,39 @@
+<?php
+//$con=mysqli_connect("sql113.ezyro.com","ezyro_28159409","z7n0ky94i","ezyro_28159409_ims");
+//$con=mysqli_connect("localhost","root","","braintechtechno");
+$con=mysqli_connect("localhost","root","","braintech");
+session_start();
+?>
+<?php
+$des=$_GET['des'];
+$uid=$_GET['uid'];
+$pwd=$_GET['pwd'];
+if($des=='student')
+{
+    $s=mysqli_query($con,"select * from student where stu_id='$uid' and pwd='$pwd'");
+    $r=mysqli_fetch_array($s);
+    $_SESSION['btt']=$r;
+    if(mysqli_num_rows($s))
+    {
+	header("location:index.php?msg=done");
+    } 
+    else
+    {
+        header("location:login.php?msg=not_done");
+    }
+}
+else if($des=='teacher')
+{
+    $s=mysqli_query($con,"select * from teacher where tea_id='$uid' and pwd='$pwd'");
+    $r=mysqli_fetch_array($s);
+    $_SESSION['bttt']=$r;
+    if(mysqli_num_rows($s))
+    {
+	header("location:index.php?msgt=done");
+    } 
+    else
+    {
+        header("location:login.php?msgt=not_done");
+    }
+}
+?>
