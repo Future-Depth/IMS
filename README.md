@@ -1,5 +1,5 @@
 # IMS
-## Institutional Management 
+## Institutional Management Website
 
 
 ## About
