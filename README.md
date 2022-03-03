@@ -1,8 +1,6 @@
 # IMS
 ## Institutional Management Website
 
-## Website
-**http://braintechtechno.ezyro.com**
 
 ## About
 **A user-friendly institutional website which provides various types of courses to the students. If a student is willing to learn about a particular course simple register into the website and enroll in that particular course.**
